@@ -16,10 +16,10 @@ function App() {
     if(user){
       getImages();
     }
-  },[user])
+  },[user]) 
 
   return (
-    <div className="App bg-slate-900">
+    <div className="App bg-slate-900 w-screen h-screen mx-auto">
       <div>
       {/* user will return null if not authenticated and if authenticated then username */}
         {user === null ? (<Login/>) : (<Home/>)}
